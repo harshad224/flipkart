@@ -1,0 +1,88 @@
+header {
+    background-color: #047BD5;
+    position: fixed;
+    width: 100%;
+}
+
+.navb {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.7rem;
+}
+
+.fa-cart-shopping {
+    margin-right: .4rem;
+}
+
+.seller {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.more {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.cart {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flipkart {
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 0rem;
+    color: white;
+}
+
+.explore {
+    font-size: .9rem;
+    text-decoration: none;
+    color: white;
+    margin-top: 0rem;
+    font-style: italic;
+    font-weight: 500;
+
+}
+
+.navinput {
+    width: 100%;
+    height: 2.3rem;
+    margin-right: 1rem;
+    padding-left: .6rem;
+
+}
+
+.plus {
+    color: #F8E831;
+    font-weight: 500;
+    margin-left: .2rem;
+}
+
+.loginbtn {
+    background-color: white;
+    color: #047BD5;
+    font-weight: bold;
+    width: 80%;
+    height: 2rem;
+    border-style: none;
+
+}
+
+//categories css

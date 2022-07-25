@@ -1,0 +1,21 @@
+.drop {
+    font-size: .9rem;
+    text-align: center;
+}
+
+.dropdowncontain {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mobile {
+    padding-top: 4.5rem;
+}
+
+// .drop::after {
+//     content: '';
+//     border-left: 1px solid;
+//     border-bottom: 1px solid;
+//     background-color: aqua;
+//     width: 2rem;
+// }

@@ -1,0 +1,9 @@
+<div class="container-fluid cat">
+    <div class="row d-flex">
+        <div class="col" *ngFor="let z of categories">
+            <img [src]="z.img" class="catimg"><br />
+            <a [routerLink]="z.cat" class="category">{{z.category}}</a>
+        </div>
+
+    </div>
+</div>
