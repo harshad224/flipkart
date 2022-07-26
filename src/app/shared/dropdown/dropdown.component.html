@@ -1,31 +1,40 @@
-<div class="container-fluid mobile">
-    <div class="row dropdowncontain">
-        <div class="col-1">
-            <h6 class="drop">Electronics</h6>
+<div class="dropcategories">
+    <div *ngFor="let z of dropdowncategory">
+        <div class={{z.class}}>
+            <div>
+                <h6 class="drop dropmenu" appDropDown>{{z.name}}</h6>
+                <div class="container-fluid dropdownmenu">
+                    <div class="row ">
+                        <div class="col">
+                            Mobiles
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="col dropcol">
+                            Mobiles
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            Mobiles
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="col dropcol">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-2">
-            <h6 class="drop">TVs & Appliances</h6>
-        </div>
-        <div class="col-1">
-            <h6 class="drop">Men</h6>
-        </div>
-        <div class="col-1">
-            <h6 class="drop">Women</h6>
-        </div>
-        <div class="col-1">
-            <h6 class="drop">Baby & Kids</h6>
-        </div>
-        <div class="col-2">
-            <h6 class="drop">Home & Furniture</h6>
-        </div>
-        <div class="col-2">
-            <h6 class="drop">Sports,Books & More</h6>
-        </div>
-        <div class="col-1">
-            <h6 class="drop">Flights</h6>
-        </div>
-        <div class="col-1">
-            <h6 class="drop">Offer Zones</h6>
-        </div>
+    </div>
+    <div class="flight">
+        <h6 class="drop">Flights</h6>
+    </div>
+    <div class="offer">
+        <h6 class="drop">Offer Zones</h6>
     </div>
 </div>

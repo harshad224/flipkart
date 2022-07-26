@@ -1,21 +1,94 @@
 .drop {
-    font-size: .9rem;
-    text-align: center;
-}
-
-.dropdowncontain {
     display: flex;
-    justify-content: space-around;
+    font-size: .85rem;
+    font-weight: 640;
+    position: relative;
 }
 
-.mobile {
-    padding-top: 4.5rem;
+.dropcategories {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1.5fr .5fr .5fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100vw;
+    padding-top: 4rem;
+    box-shadow: .2rem .2rem .3rem rgb(204, 204, 204);
+    padding-bottom: .2rem;
 }
 
-// .drop::after {
-//     content: '';
-//     border-left: 1px solid;
-//     border-bottom: 1px solid;
-//     background-color: aqua;
-//     width: 2rem;
-// }
+.electronic {
+    display: flex;
+    justify-content: end;
+}
+
+.tv {
+    display: flex;
+    justify-content: center;
+}
+
+.men {
+    display: flex;
+    justify-content: start;
+}
+
+.women {
+    display: flex;
+    justify-content: start;
+}
+
+.baby {
+    display: flex;
+    justify-content: center;
+}
+
+.flight {
+    display: flex;
+    justify-content: center;
+}
+
+.flight:hover {
+    color: #047BD5;
+}
+
+.sport {
+    display: flex;
+    justify-content: end;
+}
+
+.offer:hover {
+    color: #047BD5;
+}
+
+.dropmenu {
+    cursor: pointer;
+}
+
+.dropmenu::after {
+    content: '  ';
+    // position: absolute;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    margin-left: .4rem;
+    width: .4rem;
+    height: .4rem;
+    transform: rotate(-45deg);
+    align-self: center;
+}
+
+
+.dropdownmenu {
+    box-shadow: 0rem .1rem .2rem rgb(164, 164, 164);
+    display: none;
+    position: absolute;
+    top: 5.8rem;
+    left: 2vw;
+    width: 96vw;
+
+}
+
+.dropmenu.myclass+.dropdownmenu {
+    display: block;
+}
+
+.dropcol {
+    background-color: rgb(230, 230, 230);
+}

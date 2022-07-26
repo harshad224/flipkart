@@ -1,11 +1,14 @@
 .cat {
-    padding-top: 5rem;
+    padding-top: 4.3rem;
     text-align: center;
+    box-shadow: .2rem .2rem .3rem rgb(204, 204, 204);
+    padding-bottom: .7rem;
 }
 
 .catimg {
-    width: 3rem;
-    height: 3rem;
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 2rem;
 }
 
 .category {
@@ -13,4 +16,8 @@
     color: black;
     font-size: .9rem;
     font-weight: 500;
+}
+
+.category:hover {
+    color: #047BD5
 }
