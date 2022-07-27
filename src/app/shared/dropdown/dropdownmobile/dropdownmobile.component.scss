@@ -1,0 +1,30 @@
+.dropcol {
+    background-color: rgb(243, 243, 243);
+}
+
+.blankspace {
+    background-color: white;
+    height: 3rem;
+    position: relative;
+    z-index: -1;
+}
+
+.dropdownmobile {
+    margin-top: .3rem;
+    box-shadow: 0rem 0rem 1rem rgb(202, 202, 202);
+}
+
+.mobilename {
+    margin-top: .7rem;
+    margin-bottom: .4rem;
+    font-size: .9rem;
+    font-weight: 500;
+    color: rgb(115, 115, 115);
+}
+
+.mobilelist {
+    list-style: none;
+    font-size: .9rem;
+    color: gray;
+    margin-bottom: .3rem;
+}

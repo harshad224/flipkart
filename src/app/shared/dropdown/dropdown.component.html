@@ -1,40 +1,46 @@
-<div class="dropcategories">
-    <div *ngFor="let z of dropdowncategory">
-        <div class={{z.class}}>
-            <div>
-                <h6 class="drop dropmenu" appDropDown>{{z.name}}</h6>
-                <div class="container-fluid dropdownmenu">
-                    <div class="row ">
-                        <div class="col">
-                            Mobiles
-                            <ul>
-                                <li></li>
-                            </ul>
-                        </div>
-                        <div class="col dropcol">
-                            Mobiles
-                            <ul>
-                                <li></li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            Mobiles
-                            <ul>
-                                <li></li>
-                            </ul>
-                        </div>
-                        <div class="col dropcol">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="navba">
+    <div class="subnav">
+        <button class="subnavbtn">Mobiles<i class="fa-solid fa-angle-down"></i></button>
+        <div class="subnav-content">
+            <app-dropdownmobile></app-dropdownmobile>
         </div>
     </div>
-    <div class="flight">
-        <h6 class="drop">Flights</h6>
+    <div class="subnav">
+        <button class="subnavbtn">TVs & Appliances<i class="fa-solid fa-angle-down"></i></button>
+        <div class="subnav-content">
+            <app-dropdowntv></app-dropdowntv>
+        </div>
     </div>
-    <div class="offer">
-        <h6 class="drop">Offer Zones</h6>
+    <div class="subnav">
+        <button class="subnavbtn">Men <i class="fa-solid fa-angle-down"></i></button>
+        <div class="subnav-content">
+            <app-dropdownmen></app-dropdownmen>
+        </div>
     </div>
+    <div class="subnav">
+        <button class="subnavbtn">Women<i class="fa-solid fa-angle-down"></i></button>
+        <div class="subnav-content">
+            <app-dropdownwomen></app-dropdownwomen>
+        </div>
+    </div>
+    <div class="subnav">
+        <button class="subnavbtn">Baby & Kids<i class="fa-solid fa-angle-down"></i></button>
+        <div class="subnav-content">
+            <app-dropdownbaby></app-dropdownbaby>
+        </div>
+    </div>
+    <div class="subnav">
+        <button class="subnavbtn">Home & Furniture<i class="fa-solid fa-angle-down"></i></button>
+        <div class="subnav-content">
+            <app-dropdownhome></app-dropdownhome>
+        </div>
+    </div>
+    <div class="subnav">
+        <button class="subnavbtn">Sports,Books & More<i class="fa-solid fa-angle-down"></i></button>
+        <div class="subnav-content">
+            <app-dropdownsport></app-dropdownsport>
+        </div>
+    </div>
+    <a href="#contact" class="drop">Flights</a>
+    <a href="#contact" class="drop">Offer Zone</a>
 </div>

@@ -11,41 +11,61 @@ export class DropdownComponent implements OnInit {
   dropdowncategory: any = [{
     id: 0,
     class: 'electronic',
-    name: 'Electronics'
+    name: 'Electronics',
+    directive: 'appDropDown'
   },
   {
     id: 1,
     class: 'tv',
-    name: 'TVs & Appliances'
+    name: 'TVs & Appliances',
+    directive: 'appDropDown1'
   },
   {
     id: 2,
     class: 'men',
-    name: 'Men'
+    name: 'Men',
+    directive: 'appDropDown1'
   },
   {
     id: 3,
     class: 'women',
-    name: 'Women'
+    name: 'Women',
+    directive: 'appDropDown1'
   },
   {
     id: 4,
     class: 'baby',
-    name: 'Baby & Kids'
+    name: 'Baby & Kids',
+    directive: 'appDropDown1'
   },
   {
     id: 5,
     class: 'home',
-    name: 'Home & Furniture'
+    name: 'Home & Furniture',
+    directive: 'appDropDown1'
   },
   {
     id: 6,
     class: 'sport',
-    name: 'Sports,Books & More'
+    name: 'Sports,Books & More',
+    directive: 'appDropDown1'
   },
 
   ]
 
+
+
+  // {
+  //   name: ['Mobilesdsd'],
+  // },
+  // {
+  //   name: ['Footwear'],
+  // }
+  //   ,
+  // {
+  //   name: ['Clothing'],
+  // }
+  // ]
   constructor(private dropdownSer: DropdownService) { }
 
 
