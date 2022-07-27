@@ -10,21 +10,15 @@ import { DropdownwomenComponent } from './dropdown/dropdownwomen/dropdownwomen.c
 import { DropdownbabyComponent } from './dropdown/dropdownbaby/dropdownbaby.component';
 import { DropdownhomeComponent } from './dropdown/dropdownhome/dropdownhome.component';
 import { DropdownsportComponent } from './dropdown/dropdownsport/dropdownsport.component';
+import { DropdownModule } from "./dropdown/dropdown.module";
+import { BrowserModule } from "@angular/platform-browser";
 
 
 
 @NgModule({
     declarations: [
-        DropdownComponent,
-        DropdownmobileComponent,
-        DropdowntvComponent,
-        DropdownmenComponent,
-        DropdownwomenComponent,
-        DropdownbabyComponent,
-        DropdownhomeComponent,
-        DropdownsportComponent
     ],
-    imports: [CommonModule, HttpClientModule],
+    imports: [CommonModule, BrowserModule, HttpClientModule, DropdownModule],
     exports: [
         DropdownComponent,
     ],

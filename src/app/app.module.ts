@@ -15,6 +15,7 @@ import { FurnitureModule } from './furniture/furniture.module';
 import { FashionModule } from './fashion/fashion.module';
 import { ElectronicsModule } from './electronics/electronics.module';
 import { BeautyModule } from './beauty/beauty.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { BeautyModule } from './beauty/beauty.module';
     FurnitureModule,
     FashionModule,
     ElectronicsModule,
-    BeautyModule
+    BeautyModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

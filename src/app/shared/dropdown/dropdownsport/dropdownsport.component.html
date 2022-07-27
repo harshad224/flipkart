@@ -1,82 +1,82 @@
 <div class="container-fluid dropdownmobile">
     <div class="row ">
-        <div class="col">
+        <div class="col pb-5">
             <div class="row" *ngFor="let d of sportcol1">
-                <div class=" mobilename">{{d.name}}</div>
-                <div *ngFor="let x of d.lists">
-                    <div class="mobilelist">{{x}}</div>
+                <div class="mobilename"><a routerLink={{d.headlink}} class="sporthead">{{d.name}}</a></div>
+                <div *ngFor="let x of d.lists,let i=index">
+                    <div class="mobilelist"><a routerLink={{d.links[i]}} class="sportlist">{{x}}</a></div>
                 </div>
             </div>
             <div class="row" *ngFor="let d of sportcol11">
-                <div class=" mobilename">{{d.name}}</div>
+                <div class=" mobilename"><a class="sporthead">{{d.name}}</a></div>
                 <div *ngFor="let x of d.lists">
-                    <div class="mobilelist">{{x}}</div>
+                    <div class="mobilelist"><a class="sportlist">{{x}}</a></div>
                 </div>
             </div>
         </div>
         <div class="col dropcol">
             <div class="row" *ngFor="let d of sportcol2">
-                <div class=" mobilename">{{d.name}}</div>
+                <div class=" mobilename"><a class="sporthead">{{d.name}}</a></div>
                 <div *ngFor="let x of d.lists">
-                    <div class="mobilelist">{{x}}</div>
+                    <div class="mobilelist"><a class="sportlist">{{x}}</a></div>
                 </div>
             </div>
             <div class="row" *ngFor="let d of sportcol21">
-                <div class=" mobilename">{{d.name}}</div>
+                <div class=" mobilename"><a class="sporthead">{{d.name}}</a></div>
                 <div *ngFor="let x of d.lists">
-                    <div class="mobilelist">{{x}}</div>
+                    <div class="mobilelist"><a class="sportlist">{{x}}</a></div>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="row" *ngFor="let d of sportcol3">
-                <div class=" mobilename">{{d.name}}</div>
+                <div class=" mobilename"><a class="sporthead">{{d.name}}</a></div>
                 <div *ngFor="let x of d.lists">
-                    <div class="mobilelist">{{x}}</div>
+                    <div class="mobilelist"><a class="sportlist">{{x}}</a></div>
                 </div>
             </div>
             <div class="row" *ngFor="let d of sportcol31">
-                <div class=" mobilename">{{d.name}}</div>
+                <div class=" mobilename"><a class="sporthead">{{d.name}}</a></div>
                 <div *ngFor="let x of d.lists">
-                    <div class="mobilelist">{{x}}</div>
+                    <div class="mobilelist"><a class="sportlist">{{x}}</a></div>
                 </div>
             </div>
         </div>
         <div class="col dropcol">
             <div class="row" *ngFor="let d of sportcol4">
-                <div class=" mobilename">{{d.name}}</div>
+                <div class=" mobilename"><a class="sporthead">{{d.name}}</a></div>
                 <div *ngFor="let x of d.lists">
-                    <div class="mobilelist">{{x}}</div>
+                    <div class="mobilelist"><a class="sportlist">{{x}}</a></div>
                 </div>
             </div>
             <div class="row" *ngFor="let d of sportcol41">
-                <div class=" mobilename">{{d.name}}</div>
+                <div class=" mobilename"><a class="sporthead">{{d.name}}</a></div>
                 <div *ngFor="let x of d.lists">
-                    <div class="mobilelist">{{x}}</div>
+                    <div class="mobilelist"><a class="sportlist">{{x}}</a></div>
                 </div>
             </div>
             <div class="row" *ngFor="let d of sportcol42">
-                <div class=" mobilename">{{d.name}}</div>
+                <div class=" mobilename"><a class="sporthead">{{d.name}}</a></div>
                 <div *ngFor="let x of d.lists">
-                    <div class="mobilelist">{{x}}</div>
+                    <div class="mobilelist"><a class="sportlist">{{x}}</a></div>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="row" *ngFor="let d of sportcol5">
-                <div class=" mobilename">{{d.name}}</div>
+                <div class=" mobilename"><a class="sporthead">{{d.name}}</a></div>
                 <div *ngFor="let x of d.lists">
-                    <div class="mobilelist">{{x}}</div>
+                    <div class="mobilelist"><a class="sportlist">{{x}}</a></div>
                 </div>
             </div>
             <div class="row" *ngFor="let d of sportcol51">
-                <div class=" mobilename">{{d.name}}</div>
+                <div class=" mobilename"><a class="sporthead">{{d.name}}</a></div>
                 <div *ngFor="let x of d.lists">
-                    <div class="mobilelist">{{x}}</div>
+                    <div class="mobilelist"><a class="sportlist">{{x}}</a></div>
                 </div>
             </div>
             <div class="row" *ngFor="let d of sportcol52">
-                <div class=" mobilename">{{d.name}}</div>
+                <div class=" mobilename"><a class="sporthead">{{d.name}}</a></div>
 
             </div>
         </div>

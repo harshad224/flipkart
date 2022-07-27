@@ -5,9 +5,21 @@
 .mobilename {
     margin-top: .7rem;
     margin-bottom: .4rem;
+
+}
+
+.sportlist {
+    font-size: .9rem;
+    color: gray;
+    margin-bottom: .3rem;
+    text-decoration: none;
+}
+
+.sporthead {
     font-size: .9rem;
     font-weight: 500;
     color: rgb(115, 115, 115);
+    text-decoration: none;
 }
 
 .dropdownmobile {
@@ -17,7 +29,4 @@
 
 .mobilelist {
     list-style: none;
-    font-size: .9rem;
-    color: gray;
-    margin-bottom: .3rem;
 }

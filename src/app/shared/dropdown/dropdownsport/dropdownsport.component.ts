@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DropdownsportComponent implements OnInit {
 
-  sportcol1 = [{ name: 'Sports', lists: ['Cricket', 'Badminton', 'Cycling', 'Football', 'Skating', 'Camping & Hiking', 'Swimming'] }]
+  sportcol1 = [{ name: 'Sports', headlink: '/sports', lists: ['Cricket', 'Badminton', 'Cycling', 'Football', 'Skating', 'Camping & Hiking', 'Swimming'], links: ['/cricket', '/badminton', '/cycling', '/football', '/skating', '/campinghiking', '/swimming'] }]
   sportcol11 = [{ name: 'Exercise Fitness', lists: ['Cardio Equipment', 'Home Gym', 'Support', 'Dumbells', 'Ab Exercisers', 'Shakers & Sippers', 'Yoga Mat', 'Gym Gloves'] }]
   sportcol2 = [{ name: 'Food Essential', lists: ['Sport Shoes', 'Casual Shoes Formal Shoes', 'Sandals & FLoater', 'Flip-Flops', 'Loafer', 'Boots', 'Running Shoes', 'Sneakers'] }]
   sportcol21 = [{ name: 'Health & Nutrition', lists: ['Nuts & Dry Fruits', 'Tea,Coffee & Beverages', 'Chocolates', 'Snack Corners', 'Gifting Combos', 'Sweet Stores', 'Jams,Spreads & Honey', 'Breakfast Items'] }]
