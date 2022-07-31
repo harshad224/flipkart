@@ -1,3 +1,103 @@
 .cricket {
-    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 1fr;
+    padding-top: 3.9rem;
+    background-color: rgb(231, 231, 231);
+}
+
+.productfilter {
+    // box-shadow: 0rem .3rem .3rem gray;
+    background-color: white;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    padding-left: 1rem;
+}
+
+.productscategories {
+    font-size: .8rem;
+}
+
+.productimg {
+    width: 100%;
+    height: 37vh;
+}
+
+.productrow {
+    margin-top: .7rem;
+}
+
+.sportfil {
+    margin-top: .3rem;
+    font-size: .9rem;
+    display: flex;
+}
+
+.fa-chevron-left {
+    font-size: .6rem;
+    align-self: center;
+    margin-right: .4rem;
+}
+
+.profil {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.products {
+    // box-shadow: 0rem .3rem .3rem gray;
+    background-color: white;
+    padding-left: 1.3rem;
+}
+
+.breadcrumb {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: .8rem;
+}
+
+.cricketshow {
+    font-weight: 400;
+}
+
+.cricketshowspan {
+    font-size: .8rem;
+    margin-left: .7rem;
+    color: gray;
+}
+
+.fa-chevron-right {
+    font-size: .5rem;
+    align-self: center;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.crickpara {
+    line-height: 1.45;
+    font-size: 12px;
+    color: gray;
+}
+
+.sortby {
+    width: 100%;
+}
+
+.sorts {
+    font-size: .9rem;
+    margin-right: 1rem;
+}
+
+.sorts:hover {
+    color: #0C73EB;
+}
+
+.filterlist {
+    display: none;
+    list-style: none;
+}
+
+.filterclass+.filterlist {
+    display: block;
 }

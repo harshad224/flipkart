@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+@media(max-width:768px) {
+    body,
+    p,
+    html {
+        font-size: 80%;
+    }
+}
+
+@media(max-width:640px) {
+    body,
+    p,
+    html {
+        font-size: 60%;
+    }
+}
