@@ -6,13 +6,14 @@ import { SportsComponent } from './sports/sports.component';
 import { DropDownSportRoutingModule } from './dropdownsport.routing';
 import { CricketComponent } from './cricket/cricket.component';
 import { FilterDropdownDirective } from './dropdown.directive';
+import { InnerDropdownModule } from '../../inner/innerdropdown.module';
 
 
 
 @NgModule({
     declarations: [DropdownsportComponent, SportsComponent, CricketComponent,FilterDropdownDirective],
     imports: [
-        CommonModule, BrowserModule, DropDownSportRoutingModule
+        CommonModule, BrowserModule, DropDownSportRoutingModule,InnerDropdownModule
     ],
     exports: [DropdownsportComponent,FilterDropdownDirective]
 })

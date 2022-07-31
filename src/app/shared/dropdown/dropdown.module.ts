@@ -9,6 +9,7 @@ import { DropdownSportModule } from './dropdownsport/dropdownsport.module';
 import { DropdownTvModule } from './dropdowntv/dropdowntv.module';
 import { DropdownWomenModule } from './dropdownwomen/dropdownwomen.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { InnerDropdownModule } from '../inner/innerdropdown.module';
 // import { FilterDropdownDirective } from './dropdown.directive';
 
 
@@ -24,6 +25,7 @@ import { BrowserModule } from '@angular/platform-browser';
     DropdownSportModule,
     DropdownTvModule,
     DropdownWomenModule,
+    InnerDropdownModule,
     BrowserModule,
   ],
   exports: [DropdownComponent]
