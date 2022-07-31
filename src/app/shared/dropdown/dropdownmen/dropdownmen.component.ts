@@ -8,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class DropdownmenComponent implements OnInit {
 
 
-  mencol1 = [{ name: 'Footwear', lists: ['Sport Shoes', 'Casual Shoes Formal Shoes', 'Sandals & FLoater', 'Flip-Flops', 'Loafer', 'Boots', 'Running Shoes', 'Sneakers'] }]
-  mencol12 = [{ name: 'Men\'s Grooming', lists: ['Deodrants', 'Perfumes', 'Bed Care & Grooming', 'Shaving & Aftershave', 'Sexual Wellness'] }]
+  mencol1 = [{ name: 'Footwear',namelink:'/footwear', lists: ['Sport Shoes', 'Casual Shoes Formal Shoes', 'Sandals & FLoater', 'Flip-Flops', 'Loafer', 'Boots', 'Running Shoes', 'Sneakers'],
+ listlink:['/sportshoes', '/casualshoes', '/formalshoes', '/sandals&floater', '/flipflops', '/loafer',] }]
+  mencol12 = [{ name: 'Mens Grooming',namelink:'/mensgrooming', lists: ['Deodrants', 'Perfumes', 'Bed Care & Grooming', 'Shaving & Aftershave', 'Sexual Wellness'],
+listlink:['/deodrants','/perfume', '/bedcaregrooming','/shavingaftershave'] }]
   mencol2 = [{ name: 'Clothing' }]
   mencol21 = [{ name: 'Top Wear', lists: ['Deodrants', 'Perfumes', 'Bed Care & Grooming', 'Shaving & Aftershave', 'Sexual Wellness'] }]
   mencol22 = [{ name: 'Bottom Wear', lists: ['Deodrants', 'Perfumes', 'Bed Care & Grooming', 'Shaving & Aftershave', 'Sexual Wellness'] }]
