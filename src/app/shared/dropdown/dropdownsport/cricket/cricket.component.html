@@ -153,7 +153,7 @@
     </div>
 
     <div class="products">
-        <div class="breadcrumb"><a class="bread">Home</a><i class="fa-solid fa-chevron-right"></i><a>Sports</a><i class="fa-solid fa-chevron-right"></i><a>Cricket</a></div>
+        <div class="breadcrumb"><a routerLink='/homepage' class="bread">Home</a><i class="fa-solid fa-chevron-right"></i><a routerLink="/sports" class="bread">Sports</a><i class="fa-solid fa-chevron-right"></i><a>Cricket</a></div>
         <div class="crickpara">
             <p>Cricket is one sport that most people love. To some, it is one of the most boring games ever invented, but to the rest, it’s the most interesting and engrossing sport in the world. In India, cricket is extremely popular and you can learn it
                 from a young age. If you need to buy cricket equipment like cricket bats and cricket balls, cricket wickets, cricket pads you can browse online and buy what you need. You will find all kinds of cricket gear in cricket stores online. This
@@ -164,50 +164,69 @@
         </div>
         <div class="sortby">
             <span class="sorts">Sort By</span>
-            <span class="sorts">Popularity</span>
-            <span class="sorts">Price -- Low to High</span>
-            <span class="sorts">Price -- High to Low</span>
-            <span class="sorts">Newest First</span>
+            <span class="sorts" (click)="popularity()">Popularity</span>
+            <span class="sorts" (click)="lowhighs()">Price -- Low to High</span>
+            <span class="sorts" (click)="highlows()">Price -- High to Low</span>
+            <!-- <span class="sorts">Newest First</span> -->
         </div>
-        <div class="row productrow">
-            <div class="col-3 singleproduct">
-                <a routerLink="/cricket/1" class="productanchor">
-                    <img src="../../../../../assets/cricketball.png" class="productimg">
-                    <h6 class="productname">{{'Sagah flicks 2 panel Cricket Leather Ball' | productname}} </h6>
-                    <div class="productquantity">Pack of 1, White</div>
-                    <div class="productprice"><i class="fa-solid fa-indian-rupee-sign"></i>199</div>
-                </a>
+        <div class="productlistgrid">
+            <div class="single" *ngFor="let low of cricketproducts">
+                <div class="singleproduct">
+                    <a routerLink="/cricket/1" class="productanchor">
+                        <img src={{low.img}} class="productimg">
+                        <h6 class="productname">{{low.name | productname}} </h6>
+                        <div class="productquantity">{{low.quant}}</div>
+                        <div class="productprice"><i class="fa-solid fa-indian-rupee-sign"></i>{{low.price}}</div>
+                    </a>
+                </div>
             </div>
-            <div class="col-3 singleproduct">
-                <a routerLink="/cricket/2" class="productanchor">
-                    <img src="../../../../../assets/cricketbat.png" class="productimg">
-                    <h6 class="productname">{{'Ceat Popular Willow Cricket Bat (No- 6)' | productname}}</h6>
-                    <div class="productquantity">0.900 g</div>
-                    <div class="productprice"><i class="fa-solid fa-indian-rupee-sign"></i>349</div>
-                </a>
+        </div>
+        <!-- <div class="row productrow">
+            <div *ngIf="low" class="d-flex">
+                <div class="col-3 single" *ngFor="let low of lowhigh">
+                    <div class="singleproduct">
+                        <a routerLink="/cricket/1" class="productanchor">
+                            <img src={{low.img}} class="productimg">
+                            <h6 class="productname">{{low.name | productname}} </h6>
+                            <div class="productquantity">{{low.quant}}</div>
+                            <div class="productprice"><i class="fa-solid fa-indian-rupee-sign"></i>{{low.price}}</div>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col-3 singleproduct">
+
+            <div class="col-3 singleproduct" *ngIf="high">
+                <div *ngFor="let high of highlow" class="single">
+                    <a routerLink="/cricket/2" class="productanchor">
+                        <img src={{high.img}} class="productimg">
+                        <h6 class="productname">{{high.name | productname}}</h6>
+                        <div class="productquantity">{{high.quant}}</div>
+                        <div class="productprice"><i class="fa-solid fa-indian-rupee-sign"></i>{{high.price}}</div>
+                    </a>
+                </div>
+            </div> -->
+        <!-- <div class="col-3 singleproduct">
                 <a routerLink="/cricket/3" class="productanchor">
                     <img src="../../../../../assets/cricketkit.png" class="productimg">
                     <h6 class="productname">{{'Aurion Cricket Bag Shoulder Straps Sports Cricket Kit Bag for 2 Bat Caves with 2 pockets' | productname}}</h6>
                     <div class="productquantity">Multicolor, Kit Bag</div>
                     <div class="productprice"><i class="fa-solid fa-indian-rupee-sign"></i>499</div>
                 </a>
-            </div>
-            <div class="col-3 singleproduct">
+            </div> -->
+        <!-- <div class="col-3 singleproduct">
                 <a routerLink="/cricket/4" class="productanchor">
                     <img src="../../../../../assets/cricketgloves.png" class="productimg">
                     <h6 class="productname">{{'JetFire Basic Youth Batting Gloves (Age Group 8-12 Year) Batting Gloves' | productname}}</h6>
                     <div class="productquantity">Red, White</div>
                     <div class="productprice"><i class="fa-solid fa-indian-rupee-sign"></i>246</div>
                 </a>
-            </div>
-            <!-- <div class="col-3">
+            </div> -->
+        <!-- <div class="col-3">
                 <img src="../../../../../assets/" class="productimg">
                 <h6>dfdsfsdfsf</h6>
                 <p>sdsadd</p>
                 <p><i class=""></i>249</p>
             </div> -->
-        </div>
+        <!-- </div> -->
     </div>
 </div>
