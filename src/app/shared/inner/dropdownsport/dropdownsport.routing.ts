@@ -1,7 +1,7 @@
+import { CricketComponent } from './../../dropdown/dropdownsport/cricket/cricket.component';
+import { SportsComponent } from './../../dropdown/dropdownsport/sports/sports.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CricketComponent } from './cricket/cricket.component';
-import { SportsComponent } from './sports/sports.component';
 
 const routes: Routes = [
     { path: 'sports', component: SportsComponent },

@@ -10,6 +10,7 @@ import { DropdownTvModule } from './dropdowntv/dropdowntv.module';
 import { DropdownWomenModule } from './dropdownwomen/dropdownwomen.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { InnerDropdownModule } from '../inner/innerdropdown.module';
+import { ProductDetailModule } from '../productdetail/productdetail.module';
 // import { FilterDropdownDirective } from './dropdown.directive';
 
 
@@ -27,6 +28,7 @@ import { InnerDropdownModule } from '../inner/innerdropdown.module';
     DropdownWomenModule,
     InnerDropdownModule,
     BrowserModule,
+    ProductDetailModule
   ],
   exports: [DropdownComponent]
 })

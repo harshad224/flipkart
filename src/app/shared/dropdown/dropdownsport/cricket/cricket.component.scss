@@ -4,6 +4,7 @@
     grid-template-rows: 1fr;
     padding-top: .5rem;
     background-color: rgb(231, 231, 231);
+    padding-right: .5rem;
 }
 
 .productfilter {
@@ -16,6 +17,15 @@
 
 .productscategories {
     font-size: .8rem;
+    font-weight: bold;
+}
+
+.rating1 {
+    margin-bottom: .4rem;
+}
+
+.offercheckbox {
+    font-size: .9rem;
 }
 
 .productimg {
@@ -103,8 +113,32 @@ hr {
     padding-left: 0;
 }
 
+.productname {
+    font-size: 1rem;
+    color: black;
+}
+
+.productquantity {
+    font-size: .8rem;
+    color: rgb(155, 155, 155);
+}
+
+.productprice {
+    color: black;
+    margin-top: .2rem;
+}
+
 .productratings {
     margin-left: .4rem;
+    font-size: .9rem;
+}
+
+.fa-indian-rupee-sign {
+    margin-right: .3rem;
+}
+
+.productanchor {
+    text-decoration: none;
 }
 
 .starcheckbox {

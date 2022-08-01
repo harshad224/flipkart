@@ -1,3 +1,4 @@
+import { ProductDetailModule } from './productdetail/productdetail.module';
 import { CommonModule } from "@angular/common";
 import { HttpClientModule } from "@angular/common/http";
 import { NgModule } from "@angular/core";
@@ -13,7 +14,7 @@ import { InnerDropdownModule } from "./inner/innerdropdown.module";
 @NgModule({
     declarations: [
     ],
-    imports: [CommonModule, BrowserModule, HttpClientModule, DropdownModule,InnerDropdownModule],
+    imports: [CommonModule, BrowserModule, HttpClientModule, DropdownModule,InnerDropdownModule,ProductDetailModule],
     exports: [
         DropdownComponent,
     ],

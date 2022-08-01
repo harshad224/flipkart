@@ -7,14 +7,16 @@ import { DropDownSportRoutingModule } from './dropdownsport.routing';
 import { CricketComponent } from './cricket/cricket.component';
 import { FilterDropdownDirective } from './dropdown.directive';
 import { InnerDropdownModule } from '../../inner/innerdropdown.module';
+import { ProductDetailModule } from '../../productdetail/productdetail.module';
+import { ProductNamePipe } from './productname.pipe';
 
 
 
 @NgModule({
-    declarations: [DropdownsportComponent, SportsComponent, CricketComponent,FilterDropdownDirective],
+    declarations: [DropdownsportComponent, SportsComponent, CricketComponent,FilterDropdownDirective,ProductNamePipe],
     imports: [
-        CommonModule, BrowserModule, DropDownSportRoutingModule,InnerDropdownModule
+        CommonModule, BrowserModule, DropDownSportRoutingModule,InnerDropdownModule,ProductDetailModule
     ],
-    exports: [DropdownsportComponent,FilterDropdownDirective]
+    exports: [DropdownsportComponent,FilterDropdownDirective,ProductNamePipe]
 })
 export class DropdownSportModule { }

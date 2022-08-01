@@ -70,15 +70,15 @@
                 </h2>
                 <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
                     <div class="starcheckbox">
-                        <div>
+                        <div class="d-flex align-items-center rating1">
                             <input type="checkbox" class="productcheckbox">
                             <span class="productratings">4<i class="fa-solid fa-star"></i>& above</span>
                         </div>
-                        <div>
+                        <div class="d-flex align-items-center rating1">
                             <input type="checkbox" class="productcheckbox">
                             <span class="productratings">4<i class="fa-solid fa-star"></i>& above</span>
                         </div>
-                        <div>
+                        <div class="d-flex align-items-center rating1">
                             <input type="checkbox" class="productcheckbox">
                             <span class="productratings">4<i class="fa-solid fa-star"></i>& above</span>
                         </div>
@@ -94,10 +94,13 @@
                     </div>
                 </h2>
                 <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
-                    <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well
-                        as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though
-                        the transition does limit overflow.
+                    <div class="d-flex align-items-center">
+                        <input type="checkbox" class="productcheckbox">
+                        <span class="offercheckbox ms-2">No Cost EMI</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <input type="checkbox" class="productcheckbox">
+                        <span class="offercheckbox ms-2">Special Price</span>
                     </div>
                 </div>
             </div>
@@ -168,28 +171,36 @@
         </div>
         <div class="row productrow">
             <div class="col-3 singleproduct">
-                <img src="../../../../../assets/cricketball.png" class="productimg">
-                <h6>Sagah flicks 2 panel Cricket Leather Ball </h6>
-                <p>Pack of 1, White</p>
-                <p><i class=""></i>199</p>
+                <a routerLink="/cricket/1" class="productanchor">
+                    <img src="../../../../../assets/cricketball.png" class="productimg">
+                    <h6 class="productname">{{'Sagah flicks 2 panel Cricket Leather Ball' | productname}} </h6>
+                    <div class="productquantity">Pack of 1, White</div>
+                    <div class="productprice"><i class="fa-solid fa-indian-rupee-sign"></i>199</div>
+                </a>
             </div>
             <div class="col-3 singleproduct">
-                <img src="../../../../../assets/cricketbat.png" class="productimg">
-                <h6>CEAT POPLAR WILLOW CRICKET BAT (No- 6) Poplar Willow Cricket Bat </h6>
-                <p>0.900 g</p>
-                <p><i class=""></i>349</p>
+                <a routerLink="/cricket/2" class="productanchor">
+                    <img src="../../../../../assets/cricketbat.png" class="productimg">
+                    <h6 class="productname">{{'Ceat Popular Willow Cricket Bat (No- 6)' | productname}}</h6>
+                    <div class="productquantity">0.900 g</div>
+                    <div class="productprice"><i class="fa-solid fa-indian-rupee-sign"></i>349</div>
+                </a>
             </div>
             <div class="col-3 singleproduct">
-                <img src="../../../../../assets/cricketkit.png" class="productimg">
-                <h6>Aurion Cricket Bag Shoulder Straps Sports Cricket Kit Bag for 2 Bat Caves with 2 pockets</h6>
-                <p>Multicolor, Kit Bag</p>
-                <p><i class=""></i>499</p>
+                <a routerLink="/cricket/3" class="productanchor">
+                    <img src="../../../../../assets/cricketkit.png" class="productimg">
+                    <h6 class="productname">{{'Aurion Cricket Bag Shoulder Straps Sports Cricket Kit Bag for 2 Bat Caves with 2 pockets' | productname}}</h6>
+                    <div class="productquantity">Multicolor, Kit Bag</div>
+                    <div class="productprice"><i class="fa-solid fa-indian-rupee-sign"></i>499</div>
+                </a>
             </div>
             <div class="col-3 singleproduct">
-                <img src="../../../../../assets/cricketgloves.png" class="productimg">
-                <h6>JetFire Basic Youth Batting Gloves (Age Group 8-12 Year) Batting Gloves</h6>
-                <p>Red, White</p>
-                <p><i class=""></i>246</p>
+                <a routerLink="/cricket/4" class="productanchor">
+                    <img src="../../../../../assets/cricketgloves.png" class="productimg">
+                    <h6 class="productname">{{'JetFire Basic Youth Batting Gloves (Age Group 8-12 Year) Batting Gloves' | productname}}</h6>
+                    <div class="productquantity">Red, White</div>
+                    <div class="productprice"><i class="fa-solid fa-indian-rupee-sign"></i>246</div>
+                </a>
             </div>
             <!-- <div class="col-3">
                 <img src="../../../../../assets/" class="productimg">
