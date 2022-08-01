@@ -1,6 +1,6 @@
 <div class="container-fluid dropdownmobile">
     <div class="row ">
-        <div class="col pb-5">
+        <div class="col pb-5 dropwhite">
             <div class="row" *ngFor="let d of sportcol1">
                 <div class="mobilename"><a routerLink={{d.headlink}} class="sporthead">{{d.name}}</a></div>
                 <div *ngFor="let x of d.lists,let i=index">
@@ -28,7 +28,7 @@
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col dropwhite">
             <div class="row" *ngFor="let d of sportcol3">
                 <div class=" mobilename"><a class="sporthead">{{d.name}}</a></div>
                 <div *ngFor="let x of d.lists">
@@ -62,7 +62,7 @@
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col dropwhite">
             <div class="row" *ngFor="let d of sportcol5">
                 <div class=" mobilename"><a class="sporthead">{{d.name}}</a></div>
                 <div *ngFor="let x of d.lists">
