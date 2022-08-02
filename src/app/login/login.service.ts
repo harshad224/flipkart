@@ -1,6 +1,7 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from "@angular/core";
 import { catchError, throwError } from 'rxjs';
+import {environment} from '../../environments/environment'
 
 
 @Injectable({providedIn:'root'})
@@ -10,14 +11,14 @@ export class LoginService{
 
 
   onSignup(email:string,password:string){
-    return this.http.post('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyD6tAUW9ho2Lgi9OvfO0ug-U_7erWVK29o',
+    return this.http.post(`https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${environment.firebaseAPIkey}`,
     {email,
     password,
  returnSecureToken:true}).pipe(catchError(this.handleError))
   }
 
 onLogin(email:string,password:string){
-  return this.http.post('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyD6tAUW9ho2Lgi9OvfO0ug-U_7erWVK29o',
+  return this.http.post(`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${environment.firebaseAPIkey}`,
   {email,
   password,
 returnSecureToken:true}).pipe(catchError(this.handleError))

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { ProductdetailComponent } from './productdetail.component';
 import { InnerDropdownModule } from '../inner/innerdropdown.module';
+// import { ProductDetailRoutingModule } from './productdetail.routing.module';
 
 
 
@@ -11,7 +12,8 @@ import { InnerDropdownModule } from '../inner/innerdropdown.module';
   imports: [
     CommonModule,
     BrowserModule,
-    InnerDropdownModule
+    InnerDropdownModule,
+    // ProductDetailRoutingModule
   ],
   exports: [ProductdetailComponent]
 })

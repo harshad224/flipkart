@@ -18,12 +18,14 @@ import { BeautyModule } from './categories/beauty/beauty.module';
 import { SharedModule } from './shared/shared.module';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BookComponent } from './book/book.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     LoginComponent,
+    BookComponent,
 
   ],
   imports: [
