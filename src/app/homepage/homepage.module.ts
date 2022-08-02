@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
-import { BeautyComponent } from '../beauty/beauty.component';
+import { BeautyComponent } from '../categories/beauty/beauty.component';
 import { HomepageComponent } from "./homepage.component";
 import { HomePageRoutingModule } from "./homepage.routing";
 

@@ -1,7 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
-import { LargeComponent } from '../large/large.component';
-import { SharedModule } from "../shared/shared.module";
+import { SharedModule } from "../../shared/shared.module";
 import { HomeComponent } from "./home.component";
 import { HomeRoutingModule } from "./home.routing";
 

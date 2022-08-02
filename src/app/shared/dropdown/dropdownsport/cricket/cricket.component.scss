@@ -30,7 +30,7 @@
 
 .productimg {
     width: 100%;
-    height: 100%;
+    height: 110%;
 }
 
 .productrow {
@@ -115,7 +115,7 @@ hr {
 }
 
 .bread {
-    color: black;
+    color: rgb(150, 150, 150);
     text-decoration: none;
 }
 
@@ -209,6 +209,7 @@ hr {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     font-size: .8rem;
+    color: rgb(150, 150, 150);
 }
 
 .cricketshow {
@@ -256,9 +257,16 @@ hr {
     display: block;
 }
 
+.hr {
+    margin-top: .3rem;
+    margin-bottom: 0;
+    color: rgb(196, 196, 196);
+}
+
 .productlistgrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: .5rem
+    gap: .1rem;
+    margin-top: 0;
 }

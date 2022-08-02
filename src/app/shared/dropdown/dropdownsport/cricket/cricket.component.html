@@ -21,23 +21,23 @@
         <div class="pricecontainer">
             <div class="price">PRICE</div>
             <div class="slidecontainer">
-                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                <input type="range" min="1" max="5001" value={{myrangeval}} class="slider" id="myRange">
             </div>
             <div class="pricefilter">
                 <select name="min" id="" class="minprice">
-                <option class="min">Min</option>
-                <option class="min">500</option>
-                <option class="min">1000</option>
-                <option class="min">2500</option>
-                <option class="min">5000</option>
+                <option class="min" value="1">Min</option>
+                <option class="min" value="500">500</option>
+                <option class="min" value="1000">1000</option>
+                <option class="min" value="2500">2500</option>
+                <option class="min" value="5000">5000</option>
               </select>
                 <span>to</span>
-                <select name="max" id="" class="minprice">
-                <option class="min">500</option>
-                <option class="min">1000</option>
-                <option class="min">2500</option>
-                <option class="min">5000</option>
-                <option class="min">5000+</option>
+                <select name="max" id="" class="minprice" #rangeval>
+                <option class="min" value="500">500</option>
+                <option class="min" value="1000">1000</option>
+                <option class="min" value="2500">2500</option>
+                <option class="min" value="5000">5000</option>
+                <option class="min" value="5001">5000+</option>
               </select>
             </div>
         </div>
@@ -160,15 +160,16 @@
                 information is updated on 31-Jul-22</p>
         </div>
         <div class="mb-1">
-            <span class="cricketshow">Cricket</span><span class="cricketshowspan">(Showing 1 – 40 products of 28,443 products)</span>
+            <span class="cricketshow"><strong>Cricket</strong></span><span class="cricketshowspan">(Showing 1 – 40 products of 28,443 products)</span>
         </div>
         <div class="sortby">
-            <span class="sorts">Sort By</span>
+            <span class="sorts"><strong>Sort By</strong></span>
             <span class="sorts" (click)="popularity()">Popularity</span>
             <span class="sorts" (click)="lowhighs()">Price -- Low to High</span>
             <span class="sorts" (click)="highlows()">Price -- High to Low</span>
             <!-- <span class="sorts">Newest First</span> -->
         </div>
+        <hr class="hr" />
         <div class="productlistgrid">
             <div class="single" *ngFor="let low of cricketproducts">
                 <div class="singleproduct">

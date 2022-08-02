@@ -1,0 +1,37 @@
+<app-innerdropdown></app-innerdropdown>
+<div class="container-fluid logincontainer">
+    <div class="row  d-flex justify-content-center align-items-center">
+        <div class="col-10 d-flex justify-content-center login">
+            <div class="col-4 loginleft">
+                <div class="loginame">
+                    {{signup?'Signup':'Login'}}
+                </div>
+                <div class="loginquotes">
+                    Get access to your Orders,<br/>Wishlist and Recommendations
+                </div>
+            </div>
+            <div class="col-6 loginright">
+                <div class="loginform">
+                    <form [formGroup]="signupform" (ngSubmit)="onSubmit()">
+                        <input type="email" class="loginput" placeholder="Enter Email" formControlName="email">
+                        <input type="password" class="loginput" placeholder="Enter Password" formControlName="password">
+                        <div *ngIf="signup">
+                            <input type="password" class="loginput" placeholder="Enter Confirm Password">
+                        </div>
+                        <div *ngIf="errorhandler" class="error">
+                            {{errorhandler}}
+                        </div>
+                        <div class="loginpolicydiv" *ngIf="signup">
+                            <p class="loginpolicy">By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</p>
+                        </div>
+                        <button type="submit" class="btn loginsubmit">{{signup?'Signup':'Login'}}</button>
+                        <p class="or">OR</p>
+                        <button type="button" class="loginsubmit1">Request OTP</button>
+                    </form>
+                </div>
+                <div class="logintosignup" (click)="toggleSignup()">{{signup?'New to Flipkart?Create an Account':'Existing User?Log in'}}</div>
+            </div>
+        </div>
+
+    </div>
+</div>

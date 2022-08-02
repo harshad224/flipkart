@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-cricket',
@@ -14,11 +14,14 @@ export class CricketComponent implements OnInit {
     {id:3,img:'../../../../assets/cricketgloves.png',name:'Sagah flicks 2 panel Cricket Leather BallJetFire Basic Youth Batting Gloves (Age Group 8-12 Year) Batting Gloves',quant:'Red,White',price:246,star:4},
   ]
 
+  @ViewChild('rangeval') myrange:any
 // low:boolean=false;
 // high:boolean=false
 //   popular:any;
   // lowhigh:any;
   // highlow:any
+
+  myrangeval:number=1000
 
 
   constructor() { }
@@ -26,6 +29,10 @@ export class CricketComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  selectOptions(){
+    console.log(this.myrange[0])
+
+  }
   popularity(){
   return   this.cricketproducts.sort((a:any,b:any)=>{return b.star - a.star})
  }
