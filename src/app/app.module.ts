@@ -1,3 +1,4 @@
+import { LoginGuard } from './login/login.guard';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -19,13 +20,13 @@ import { SharedModule } from './shared/shared.module';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BookComponent } from './book/book.component';
+import { BookModule } from './book/book.module';
+import { LoginModule } from './login/login.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    LoginComponent,
-    BookComponent,
 
   ],
   imports: [
@@ -41,10 +42,12 @@ import { BookComponent } from './book/book.component';
     FashionModule,
     ElectronicsModule,
     BeautyModule,
+    BookModule,
+    LoginModule,
     SharedModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [LoginGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

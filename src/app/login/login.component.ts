@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { LoginService } from './login.service';
+import { Observable } from 'rxjs';
+import { AuthResponseData, LoginService } from './login.service';
 
 @Component({
   selector: 'app-login',
@@ -11,29 +12,44 @@ export class LoginComponent implements OnInit {
 
   constructor(private loginSer:LoginService) { }
 
+
   signupform:any=FormGroup
-signup:boolean=true
-errorhandler:any
+  signup:boolean=true
+  errorhandler:any
   ngOnInit(): void {
 
     this.signupform=new FormGroup({
       'email':new FormControl(null,Validators.required),
       'password':new FormControl(null,Validators.required),
-      // 'loginemail':new FormControl(null,Validators.required),
-      // 'loginpassword':new FormControl(null,Validators.required),
     })
   }
 
   toggleSignup(){
-this.signup=!this.signup
+   this.signup=!this.signup
   }
-onSubmit(){
+
+
+
+  onSubmit(){
+
+  let authobsv:Observable<AuthResponseData>
 
   const{email,password}=this.signupform.value
-  if(this.signup){
-    this.loginSer.onSignup(email,password).subscribe((data)=>{console.log(data)})
+
+  if(this.signupform.valid){
+    if(this.signup){
+      authobsv=this.loginSer.onSignup(email,password)
+      history.back()
+
+    }else{
+      authobsv=this.loginSer.onLogin(email,password)
+      history.back()
+    }
+    authobsv.subscribe((data)=>{console.log(data)},(err)=>this.errorhandler=err)
   }
-  this.loginSer.onLogin(email,password).subscribe((data)=>{console.log(data)},(err)=>this.errorhandler=err)
+
 }
+
+
 
 }

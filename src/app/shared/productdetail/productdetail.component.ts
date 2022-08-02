@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { LoginService } from 'src/app/login/login.service';
 
 @Component({
   selector: 'app-productdetail',
@@ -8,12 +9,20 @@ import { Router } from '@angular/router';
 })
 export class ProductdetailComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  userr:boolean=false;
+  constructor(private router:Router,private loginSer:LoginService) { }
 
   ngOnInit(): void {
+    this.userr=this.loginSer.user?true:false
+    console.log(this.userr)
   }
 
   toBook(){
-this.router.navigateByUrl('/book')
+    if(this.userr){
+      this.router.navigateByUrl('/book')
+    }else{
+      this.router.navigateByUrl('/login')
+    }
+
   }
 }
