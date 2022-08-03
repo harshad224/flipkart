@@ -1,14 +1,14 @@
 <app-innerdropdown></app-innerdropdown>
 <div class="productdetail">
-    <div class="product">
+    <div class="product" *ngFor="let item of singleproductarray">
         <div class="productdetailback">
             <div class="">
-                sdsdsd
+
             </div>
         </div>
         <div class="">
             <div class="leftproduct">
-                <img src="../../../assets/cricketball.png" class="productdetailimg">
+                <img src={{item.img}} class="productdetailimg">
                 <div class="d-flex justify-content-between">
                     <button type="button" class="btn btn-secondary buybtn">
                 <i class="fa-solid fa-cart-shopping"></i>ADD TO CART
@@ -20,8 +20,8 @@
             </div>
         </div>
         <div class="productdetailright">
-            <div class="breadcrumbs"><a routerLink='/homepage' class="bread">Home</a><i class="fa-solid fa-chevron-right"></i><a routerLink="/sports" class="bread">Sports</a><i class="fa-solid fa-chevron-right"></i><a>Cricket</a><i class="fa-solid fa-chevron-right"></i><a>Cricket Bat </a></div>
-            <h5>Sagah flicks 2 panel Cricket Leather Ball</h5>
+            <div class="breadcrumbs"><a routerLink='/homepage' class="bread">Home</a><i class="fa-solid fa-chevron-right"></i><a routerLink="/sports" class="bread">Sports</a><i class="fa-solid fa-chevron-right"></i><a>Cricket</a><i class="fa-solid fa-chevron-right"></i><a>Cricket {{item.cat}}</a></div>
+            <h5>{{item.name}}</h5>
             <div class="ratingrow">
                 <button class="starbtn">
                 4<i class="fa-solid fa-star"></i>
@@ -31,7 +31,7 @@
             </div>
             <div>Extra ₹100 off</div>
             <div class="costing">
-                <div class="cost"><i class="fa-solid fa-indian-rupee  rupees"></i>599</div>
+                <div class="cost"><i class="fa-solid fa-indian-rupee  rupees"></i>{{item.price}}</div>
                 <div class="cost1"><i class="fa-solid fa-indian-rupee  rupees1"></i>1,199</div>
                 <div class="off">50% off</div>
             </div>
@@ -49,11 +49,11 @@
                         </div>
                         <div class="col-9">
                             <ul class="highlightlist">
-                                <li>Cricket Leather Ball</li>
-                                <li>Water Resistant</li>
-                                <li>Outer Material: Leather</li>
-                                <li>Weight: 150-170 g</li>
-                                <li>Suitable for: Dry, Wet Pitch</li>
+                                <li class="highlist">Cricket Leather Ball</li>
+                                <li class="highlist">Water Resistant</li>
+                                <li class="highlist">Outer Material: Leather</li>
+                                <li class="highlist">Weight: 150-170 g</li>
+                                <li class="highlist">Suitable for: Dry, Wet Pitch</li>
                             </ul>
                         </div>
                     </div>

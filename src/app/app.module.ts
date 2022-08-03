@@ -22,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BookComponent } from './book/book.component';
 import { BookModule } from './book/book.module';
 import { LoginModule } from './login/login.module';
+import { ProductsService } from './products.service';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,7 @@ import { LoginModule } from './login/login.module';
     SharedModule,
     ReactiveFormsModule
   ],
-  providers: [LoginGuard],
+  providers: [LoginGuard,ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

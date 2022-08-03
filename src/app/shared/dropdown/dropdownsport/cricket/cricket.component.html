@@ -173,7 +173,7 @@
         <div class="productlistgrid">
             <div class="single" *ngFor="let low of cricketproducts">
                 <div class="singleproduct">
-                    <a routerLink="/cricket/1" class="productanchor">
+                    <a [routerLink]="['/cricket',low.id]" class="productanchor">
                         <img src={{low.img}} class="productimg">
                         <div class="productname">{{low.name | productname}} </div>
                         <div class="productquantity">{{low.quant}}</div>
