@@ -14,14 +14,15 @@ export class NavbarComponent implements OnInit,OnDestroy {
 
   private userSub:any;
 
-  constructor(private loginSer:LoginService,private router:Router) { }
+  constructor(private loginSer:LoginService,private router:Router) {
+    this.userSub=this.loginSer.user.subscribe(user=>{
+      this.authenticated=!!user
+          })
+  }
 
 
   ngOnInit(): void {
 
-  this.userSub=this.loginSer.user.subscribe(user=>{
-this.authenticated=!!user
-    })
   }
 
   logout(){

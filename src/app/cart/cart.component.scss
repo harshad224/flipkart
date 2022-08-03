@@ -1,0 +1,153 @@
+.cartgrid {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 1fr;
+    column-gap: 1rem;
+    margin-left: 9vw;
+    margin-right: 9vw;
+    position: relative;
+}
+
+.cartback {
+    background-color: rgb(242, 242, 242);
+    width: 100vw;
+    height: 100vh;
+}
+
+.cartcol1 {
+    background-color: white;
+    box-shadow: 0rem .3rem .2rem gray;
+}
+
+.cartcol2 {
+    position: relative;
+}
+
+.cartabsolute {
+    position: absolute;
+    margin-top: 80px;
+    width: 100%;
+}
+
+.pincode {
+    background-color: rgb(242, 242, 242);
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    border-radius: .2rem;
+}
+
+.cartimg {
+    width: 90%;
+}
+
+.cartgrid1 {
+    display: grid;
+    grid-template-columns: 2.5fr 7fr 4fr;
+    grid-template-rows: 1fr;
+    margin-top: 15px;
+}
+
+.cartrupees1 {
+    font-size: .9rem;
+}
+
+.cartcost1 {
+    font-size: 1rem;
+    color: gray;
+    margin-top: 7px;
+    text-decoration: line-through;
+}
+
+.cartrupees {
+    font-size: 1rem;
+}
+
+.cartcost {
+    font-size: 1.2rem;
+    margin-left: 15px;
+    margin-top: 3px;
+}
+
+.sportsgood {
+    color: gray;
+    margin-top: 7px;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.offerapplied {
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: .9rem;
+    color: green;
+    font-weight: 500;
+}
+
+.productitle {
+    font-size: 1.1rem;
+}
+
+.cartright {
+    margin-left: .5rem;
+    padding-bottom: 1.5rem;
+}
+
+.savelater {
+    font-size: 1.1rem;
+    margin-right: 1.6rem;
+}
+
+.fa-circle-minus {
+    font-size: 1.8rem;
+}
+
+.fa-circle-plus {
+    font-size: 1.8rem;
+}
+
+.quantityno {
+    width: 4rem;
+}
+
+.saveremove {
+    margin-top: 51px;
+    padding-bottom: 9px;
+}
+
+.placeorderbtn {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    padding: .8rem 1rem;
+    box-shadow: 0rem -.1rem .4rem rgb(207, 207, 207);
+}
+
+.orderbtn {
+    background-color: orangered;
+    width: 17rem;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.pricedetails {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: gray;
+}
+
+.cartorderright {
+    position: absolute;
+    width: 100%;
+    padding-bottom: 1rem;
+    box-shadow: 0rem .3rem .2rem gray;
+}
+
+.savedaddress {
+    border-radius: .2rem;
+}
+
+.free {
+    color: green
+}

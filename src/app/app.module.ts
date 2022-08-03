@@ -23,11 +23,13 @@ import { BookComponent } from './book/book.component';
 import { BookModule } from './book/book.module';
 import { LoginModule } from './login/login.module';
 import { ProductsService } from './products.service';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
+    CartComponent,
 
   ],
   imports: [
