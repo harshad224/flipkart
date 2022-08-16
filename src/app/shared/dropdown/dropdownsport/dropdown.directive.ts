@@ -9,7 +9,7 @@ export class FilterDropdownDirective{
 
   constructor(){}
 
-  @HostBinding('class.filterclass') className:boolean=false
+  @HostBinding('class.filterclass') className:boolean=true
 
   @HostListener('click') myClick(){
     this.className=!this.className

@@ -13,14 +13,23 @@ export class ProductdetailComponent implements OnInit {
   userr:boolean=false;
   getparams:any
   singleproductarray:any
+  getidparams:any
+  getpathparams:any
   constructor(private router:Router,private loginSer:LoginService,private route:ActivatedRoute,private productSer:ProductsService) { }
 
   ngOnInit(): void {
     this.userr=this.loginSer.user?true:false
 
-    this.getparams=this.route.snapshot.params['id']
+    this.getidparams=this.route.snapshot.params['id']
+    this.getpathparams=this.route.snapshot.params['categorypath']
 
-      this.singleproductarray=this.productSer.cricketproducts.filter((data:any)=>{return data.id==this.getparams})
+
+    this.productSer.getsingleProducts(this.getpathparams,this.getidparams).subscribe((data:any)=>{
+
+this.singleproductarray=[data]
+      })
+
+      console.log(this.singleproductarray)
   }
 
   toBook(){

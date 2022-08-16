@@ -14,7 +14,7 @@ export class LoginGuard implements CanActivate{
       return this.loginSer.user
       .pipe(
       map(user=>{
-        const isAuth=!!user;
+        const isAuth=user?true:false;
       if(isAuth){
         return true;
       }else{

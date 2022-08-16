@@ -4,7 +4,7 @@
             <div class="row" *ngFor="let d of sportcol1">
                 <div class="mobilename"><a routerLink={{d.headlink}} class="sporthead">{{d.name}}</a></div>
                 <div *ngFor="let x of d.lists,let i=index">
-                    <div class="mobilelist"><a routerLink={{d.links[i]}} class="sportlist">{{x}}</a></div>
+                    <div class="mobilelist"><a [routerLink]="['/flipkart',d.links[i]]" class="sportlist">{{x}}</a></div>
                 </div>
             </div>
             <div class="row" *ngFor="let d of sportcol11">

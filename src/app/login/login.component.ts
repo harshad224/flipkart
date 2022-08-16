@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Observable } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
+import { ProductsService } from '../products.service';
 import { AuthResponseData, LoginService } from './login.service';
 
 @Component({
@@ -8,9 +9,11 @@ import { AuthResponseData, LoginService } from './login.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent implements OnInit{
 
-  constructor(private loginSer:LoginService) { }
+  // private subscriptions = new Subscription();
+
+  constructor(private loginSer:LoginService,private productSer:ProductsService) { }
 
 
   signupform:any=FormGroup
@@ -22,10 +25,21 @@ export class LoginComponent implements OnInit {
       'email':new FormControl(null,Validators.required),
       'password':new FormControl(null,Validators.required),
     })
+
+
+    const a=new Promise((resolve,reject)=>{
+      resolve(console.log('Data received successfully'))
+    })
+    // .then(()=>console.log('data'))
+    // .catch(()=>console.log('error'))
+
+// this.subscriptions=this.productSer.obsv.subscribe((data)=>{console.log(data)})
+
   }
 
   toggleSignup(){
    this.signup=!this.signup
+
   }
 
 
@@ -39,16 +53,18 @@ export class LoginComponent implements OnInit {
   if(this.signupform.valid){
     if(this.signup){
       authobsv=this.loginSer.onSignup(email,password)
-      history.back()
 
     }else{
       authobsv=this.loginSer.onLogin(email,password)
-      history.back()
     }
-    authobsv.subscribe((data)=>{console.log(data)},(err)=>this.errorhandler=err)
+    authobsv.subscribe((data)=>{console.log(data);history.back()},(err)=>this.errorhandler=err)
   }
 
 }
+
+// ngOnDestroy(): void {
+//     this.subscriptions.unsubscribe()
+// }
 
 
 

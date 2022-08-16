@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DropdownComponent } from './dropdown.component';
@@ -11,6 +12,8 @@ import { DropdownWomenModule } from './dropdownwomen/dropdownwomen.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { InnerDropdownModule } from '../inner/innerdropdown.module';
 import { ProductDetailModule } from '../productdetail/productdetail.module';
+import { ProductsService } from 'src/app/products.service';
+// import { SubcategoryComponent } from '../subcategory/subcategory.component';
 // import { FilterDropdownDirective } from './dropdown.directive';
 
 
@@ -28,8 +31,10 @@ import { ProductDetailModule } from '../productdetail/productdetail.module';
     DropdownWomenModule,
     InnerDropdownModule,
     BrowserModule,
-    ProductDetailModule
+    ProductDetailModule,
+    RouterModule
   ],
+  providers:[ProductsService],
   exports: [DropdownComponent]
 })
 export class DropdownModule { }

@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DropdownsportComponent } from './dropdownsport.component';
@@ -9,13 +10,16 @@ import { FilterDropdownDirective } from './dropdown.directive';
 import { InnerDropdownModule } from '../../inner/innerdropdown.module';
 import { ProductDetailModule } from '../../productdetail/productdetail.module';
 import { ProductNamePipe } from './productname.pipe';
+import { SubcategoryComponent } from './subcategory/subcategory.component';
+
+
 
 
 
 @NgModule({
-    declarations: [DropdownsportComponent, SportsComponent, CricketComponent,FilterDropdownDirective,ProductNamePipe],
+    declarations: [DropdownsportComponent, SportsComponent, CricketComponent,FilterDropdownDirective,ProductNamePipe, SubcategoryComponent],
     imports: [
-        CommonModule, BrowserModule, DropDownSportRoutingModule,InnerDropdownModule,ProductDetailModule
+        CommonModule, BrowserModule, DropDownSportRoutingModule,InnerDropdownModule,ProductDetailModule,RouterModule
     ],
     exports: [DropdownsportComponent,FilterDropdownDirective,ProductNamePipe]
 })

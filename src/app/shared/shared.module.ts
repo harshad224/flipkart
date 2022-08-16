@@ -8,6 +8,8 @@ import { DropdownService } from "./dropdown/dropdown.service";
 import { DropdownModule } from "./dropdown/dropdown.module";
 import { BrowserModule } from "@angular/platform-browser";
 import { InnerDropdownModule } from "./inner/innerdropdown.module";
+import { ProductsService } from '../products.service';
+// import { SubcategoryComponent } from './dropdown/dropdownsport/cricket/subcategory/subcategory.component';
 // import { InnerDropdownModule } from "./inner/innerdropdown.module";
 
 
@@ -19,7 +21,7 @@ import { InnerDropdownModule } from "./inner/innerdropdown.module";
     exports: [
         DropdownComponent,InnerDropdownComponent
     ],
-    providers: [DropdownService]
+    providers: [DropdownService,ProductsService]
 })
 export class SharedModule {
 

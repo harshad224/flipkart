@@ -1,17 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
 
-@media(max-width:768px) {
-    body,
-    p,
+// @media(max-width:768px) {
+//     body,
+//     p,
+//     html {
+//         font-size: 80%;
+//     }
+// }
+// @media(max-width:640px) {
+//     body,
+//     p,
+//     html {
+//         font-size: 60%;
+//     }
+// }
+html,
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media(max-width:1000px) {
     html {
         font-size: 80%;
     }
 }
 
-@media(max-width:640px) {
-    body,
-    p,
+@media(max-width:790px) {
     html {
         font-size: 60%;
+    }
+}
+
+@media(max-width:583px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media(max-width:439px) {
+    html {
+        font-size: 36%;
     }
 }
