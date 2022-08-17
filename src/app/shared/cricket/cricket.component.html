@@ -186,7 +186,7 @@
                     <div class="singleproduct">
                         <a [routerLink]="['/flipkart',low.category,low.path,low._id]" class="productanchor">
                             <img src={{low.img}} class="productimg">
-                            <div class="productname">{{low.name | productname}} </div>
+                            <div class="productname">{{low.name}} </div>
                             <div class="productquantity">{{low.quant}}</div>
                             <div class="productprice"><i class="fa-solid fa-indian-rupee-sign"></i>{{low.price}}</div>
                         </a>
@@ -217,7 +217,7 @@
                     <div class="singleproduct">
                         <a [routerLink]="['/flipkart',pro.category,pro.path,pro._id]" class="productanchor">
                             <img src={{pro.img}} class="productimg">
-                            <div class="productname">{{pro.name | productname}} </div>
+                            <div class="productname">{{pro.name}} </div>
                             <div class="productquantity">{{pro.quant}}</div>
                             <div class="productprice"><i class="fa-solid fa-indian-rupee-sign"></i>{{pro.price}}</div>
                         </a>

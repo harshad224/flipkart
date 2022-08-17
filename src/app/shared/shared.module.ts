@@ -9,6 +9,8 @@ import { DropdownModule } from "./dropdown/dropdown.module";
 import { BrowserModule } from "@angular/platform-browser";
 import { InnerDropdownModule } from "./inner/innerdropdown.module";
 import { ProductsService } from '../products.service';
+// import { CricketComponent } from './cricket/cricket.component';
+import { CricketModule } from './cricket/cricket.module';
 // import { SubcategoryComponent } from './dropdown/dropdownsport/cricket/subcategory/subcategory.component';
 // import { InnerDropdownModule } from "./inner/innerdropdown.module";
 
@@ -17,7 +19,7 @@ import { ProductsService } from '../products.service';
 @NgModule({
     declarations: [
     ],
-    imports: [CommonModule, BrowserModule, HttpClientModule, DropdownModule,InnerDropdownModule,ProductDetailModule],
+    imports: [CommonModule, BrowserModule, HttpClientModule, DropdownModule,InnerDropdownModule,ProductDetailModule,CricketModule],
     exports: [
         DropdownComponent,InnerDropdownComponent
     ],

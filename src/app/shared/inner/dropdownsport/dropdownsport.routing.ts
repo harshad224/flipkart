@@ -1,5 +1,5 @@
+import { CricketComponent } from './../../cricket/cricket.component';
 import { SportsComponent } from '../../dropdown/dropdownsport/sports/sports.component';
-import { CricketComponent } from '../../dropdown/dropdownsport/cricket/cricket.component';
 import { ProductdetailComponent } from '../../productdetail/productdetail.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';

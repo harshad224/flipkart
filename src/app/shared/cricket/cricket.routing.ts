@@ -1,11 +1,11 @@
-import { CricketComponent } from './../../cricket/cricket.component';
+import { CricketComponent } from './cricket.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProductdetailComponent } from '../../productdetail/productdetail.component';
+import { ProductdetailComponent } from '../productdetail/productdetail.component';
+import { SportsComponent } from '../dropdown/dropdownsport/sports/sports.component';
 // import { SubcategoryComponent } from '../../subcategory/subcategory.component';
 // import { CricketComponent } from './cricket/cricket.component';
-import { SportsComponent } from './sports/sports.component';
-import { SubcategoryComponent } from './subcategory/subcategory.component';
+
 
 // const routes: Routes = [
 //     { path: 'sports', component: SportsComponent },
@@ -25,4 +25,4 @@ const routes: Routes = [
     imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule]
 })
-export class DropDownSportRoutingModule { }
+export class CategoryRoutingModule { }
